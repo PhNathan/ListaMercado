@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc5e03;
+    height: 100px;
+}
+
+h2{
+    color: white;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 990px;
+    
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#lista-compra{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+#lista-compra input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    outline: none;
+}
+
+#lista-compra input[type="submit"]{
+    padding: 10px;
+    margin: 5px;
+    background-color: #00FF;
+    color: #FFF;
+    border: 0;
+    cursor: pointer;
+    width: 150px;
+}
+
+.line{
+    background-color: #CCC;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+
+
+#lista-produtos{
+    
+    width: 100%;
+   
+}
+
+.lista-produto-single{
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
+    
+}
+
+.lista-produto-single h3{
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+h3 .price{
+    text-align: right;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.limpar{
+    padding: 10px;
+    margin: 5px;
+    background-color: #00FF;
+    color: #FFF;
+    border: 0;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fc5e03;
+    color: white;
+    text-align: center
+}
+
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #lista-compra{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lista-compra input[type=text],
+    input[type=number],input[type=submit]{
+        width: 60%;
+    }
+    #lista-compra input[type=submit]{
+        width: 60%;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    
+
+    #lista-compra input[type=text],
+    input[type=number],input[type=submit]{
+        width: 50%;
+    }
+    #lista-compra input[type=submit]{
+        width: 50%;
+    }
+
+  }
